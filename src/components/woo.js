@@ -2,9 +2,9 @@ import React, { useRef, useEffect } from 'react';
 import { motion, useMotionValue, transform, useAnimation } from 'framer-motion';
 
 const containerSize = 400;
-const rows = [0, 1, 2, 3, 4, 5,6, 7, 8 ];
-const columns = [0,1,2,3,4,5,6, 7, 98];
-const boxSize = containerSize/rows.length;
+const rows = [0, 1, 2, 3, 4, 5];
+const columns = rows;
+const boxSize = containerSize / rows.length;
 const transition = { duration: 3, loop: Infinity, ease: 'easeOut' };
 
 export function Matrix() {
@@ -149,7 +149,6 @@ function calcAngle(top, left, cursorTop, cursorLeft) {
 }
 
 const styles = {
-
     page: {
         width: '100vw',
         height: '100vh',
@@ -158,7 +157,7 @@ const styles = {
         justifyContent: 'center',
         position: 'absolute',
         top: 0,
-        left: 0,
+        left: 0
     },
     container: {
         position: 'relative',
