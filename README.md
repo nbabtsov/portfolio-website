@@ -1,4 +1,4 @@
-This project is the source code of my personal website: nikababtsov.com
+This project is the source code of my personal website: https://nikababtsov.com
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
