@@ -6,9 +6,14 @@ import {ArrowBack, AssignmentInd, Home, Apps, ContactMail} from "@material-ui/ic
 const Navbar = () => {
     return(
         <Box component="nav">
-            <AppBar>
+            <AppBar position="static" style={{background:"#222"}}>
                 <Toolbar>
-                    <ArrowBack></ArrowBack>
+                    <IconButton>
+                        <ArrowBack style={{color:'white'}}></ArrowBack>
+                    </IconButton>
+                    <Typography variant="h5" style={{color:"white"}}>
+                        Portfolio
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </Box>
